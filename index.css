@@ -1,177 +1,390 @@
-body {
-    @font-face {
-      font-family: Asap-Regular; /* Гарнитура шрифта */
-      src: url(assets/Asap-Regular.ttf); /* Путь к файлу со шрифтом */
-    }
-    body {
-      font-family: 'Roboto', sans-serif;
-      max-width: 1300px;
-      margin-top: 0;
-    @@ -11,17 +15,18 @@
-        height: 566px;
-        background-image: url(assets/headerBackground.png);
-    }
-    
-    .video-theyalow {
-    
-        width: 549px;
-        height: 327px;
-    }
-    .header-theyalow-title  {
-        font-family: 'Asap-Regular', sans-serif;
-        font-size: 30pt;
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 90px;
-        margin-left: 51px;
-        margin-right: auto;
-        margin-bottom: 116px;
-        color: rgba(245, 197, 6, 255);
-    }
-    @@ -92,7 +97,7 @@ button {
-        text-transform: uppercase;
-        background-color: Transparent;
-        background-repeat:no-repeat;
-        color: rgba(155, 125, 8, 255);
-        color: rgba(155, 125, 8, 1);
-        border: none;
-        cursor:pointer;
-        overflow: hidden;
-    @@ -109,7 +114,7 @@ button span {
-        width: 33px;
-        height: 36px;
-        background-position: 1px 3px;
-        background-size: 60px;
-        background-size: 95px;
-    }
-    .div-img-services {
-        background-image: url(./assets/icons.png);
-    @@ -118,7 +123,7 @@ button span {
-        width: 33px;
-        height:36px;
-        background-position: -29px 3px;
-        background-size: 60px;
-        background-size: 95px;
-    }
-    .div-img-contact {
-        background-image: url(./assets/icons.png);
-    @@ -127,14 +132,117 @@ button span {
-        width: 33px;
-        height: 36px;
-        background-position: 0px -29px;
-        background-size: 60px;
-        background-size: 95px;
-    }
-    .btn-services, .btn-about-us  {
-        border-right: 1px solid rgba(155, 125, 8, 255);
-        border-right: 1px solid rgba(155, 125, 8, 1);
-        height: 41px;
-    }
-    .btn-about-us {
-        padding-left: 87px;
-    }
-    .nav-btn {
-        display: flex;
-    }
-    
-    .switch-with-arrow-left {
-        background-color: #f5c506;
-        background-image: url(./assets/icons.png);
-        display: inline-block;
-        width: 32px;
-        height: 57px;
-        background-position: -58px 56px;
-        background-size: 90px;
-        margin-top: 135px;
-        margin-bottom: auto;
-        margin-right: 100px;
-        position: relative;
-        left: -150px;
-    }
-    
-    .switch-with-arrow-right {
-        background-color: #f5c506;
-        background-image: url(./assets/icons.png);
-        display: inline-block;
-        width: 32px;
-        height: 57px;
-        background-position: -58px 56px;
-        background-size: 90px;
-        margin-top: 135px;
-        margin-bottom: auto;
-        position: relative;
-        transform: rotate(185.36rad);
-    }
-    .services {
-        position: relative;
-        width: 100%;
-        height: 212px;
-    }
-    .div-img-services {
-        background-image: url(./assets/icons.png);
-        background-repeat: no-repeat;
-        background-position: 1px 3px;
-        background-size: 95px;
-        display: inline-block;
-        width: 33px;
-        height: 36px;
-    
-    }
-    .btn-services-better-design, .btn-services-customise, .btn-services-its-free {
-        border-left: 1px solid #C0C0C0;
-        height: 212px;
-        padding-right: 100px;
-        padding-left: 101px;
-    }
-    .btn-services-better-design {
-        margin-left: 139px;
-    }
-    .btn-services-its-free{
-        border-right: 1px solid #C0C0C0;
-        margin-right: 139px;
-    }
-    .div-img-services-better-design {
-        background-image: url(./assets/servicesIcons.png);
-        background-repeat: no-repeat;
-        background-position: 0px 13px;
-        background-size: 305px;
-        display: inline-block;
-        width: 109px;
-        height: 87px;    
-    }
-    .div-img-services-customise{
-        background-image: url(./assets/servicesIcons.png);
-        background-repeat: no-repeat;
-        background-position: -100px 13px;
-        background-size: 305px;
-        display: inline-block;
-        width: 109px;
-        height: 87px;  
-    }
-    .div-img-services-its-free {
-        background-image: url(./assets/servicesIcons.png);
-        background-repeat: no-repeat;
-        background-position: -200px 13px;
-        background-size: 305px;
-        display: inline-block;
-        width: 109px;
-        height: 87px;
-    }
-    .service-btn {
-        display: block
-    }
-    .span-services {
-        margin-left: 18px;
-        color: #000000;
-        font-size: 14pt;
-    }
-    .lorem {
-        text-transform: uppercase;
-        text-align: left;
-        padding-top: 42px;
-        padding-left: 143px;
-    }
-    .main-up {
-        background-color: #f5c506;
-        height: 509px;
-    } 
+@font-face {
+    font-family: Asap-Regular; /* Гарнитура шрифта */
+    src: url(assets/Asap-Regular.ttf); /* Путь к файлу со шрифтом */
+    font-family: Asap-RegularItalic; /* Гарнитура шрифта */
+    src: url(assets/Asap-RegularItalic.ttf); /* Путь к файлу со шрифтом */
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+  @@ -18,17 +20,24 @@ body {
+  .video-theyalow {
+      width: 549px;
+      height: 327px;
+      position: relative;
+      left: -134px;
+      bottom: 56px;
+  }
+  .video-theyalow-main {
+      width: 315px;
+      height: 233px;
+  }
+  .header-theyalow-title  {
+      font-family: 'Asap-Regular', sans-serif;
+      font-size: 30pt;
+      text-transform: uppercase;
+      font-size: 49pt;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 90px;
+      margin-left: 51px;
+      margin-top: 23px;
+      margin-left: -45px;
+      margin-right: auto;
+      margin-bottom: 116px;
+      color: rgba(245, 197, 6, 255);
+      margin-bottom: 116px;
+      color: rgba(245, 197, 6, 255);
+  }
+  h1 .header-theyalow-title  {
+       color: #ffffff;
+  @@ -49,20 +58,28 @@ h1 .header-theyalow-title  {
+      padding-left: 232px;
+  }
+  .logo-img {
+      width: 50px;
+      height: 50px;
+      }
+      width: 87px;
+      height: 87px;
+      position: relative;
+      right: 95px;
+      bottom: 38px;
+  }
+  .logo-up-img {
+      position: relative;
+      z-index: 2;
+      left: -49px;
+      width: 50px;
+      height: 50px;
+      left: -184px;
+      bottom: 39px;
+      width: 87px;
+      height: 87px;
+  }
+  .site-name {
+      text-transform: uppercase;
+      padding-right: 185px;
+      font-size: 2em;
+      font-family: 'Asap-RegularItalic', sans-serif;
+      text-transform: uppercase;
+      padding-right: 73px;
+      font-size: 2.4em;
+      position: relative;
+      right: 171px;
+      bottom: 10px;
+  }
+  .navbar {
+      width: 453px;
+  @@ -107,6 +124,10 @@ button span {
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+  .devace-gray {
+      background-color: #4c4c4c;
+      height: 499px;
+  }
+  .div-img-about-us {
+      background-image: url(./assets/icons.png);
+      background-repeat: no-repeat;
+  @@ -158,6 +179,7 @@ button span {
+      margin-right: 100px;
+      position: relative;
+      left: -150px;
+      bottom: 59px;
+  }
+  
+  .switch-with-arrow-right {
+  @@ -171,12 +193,14 @@ button span {
+      margin-top: 135px;
+      margin-bottom: auto;
+      position: relative;
+      bottom: 59px;
+      transform: rotate(185.36rad);
+  }
+  .services {
+      position: relative;
+      width: 100%;
+      height: 212px;
+      box-shadow: 0px 15px 9px -15px #111;
+  }
+  .div-img-services {
+      background-image: url(./assets/icons.png);
+  @@ -191,58 +215,258 @@ button span {
+  .btn-services-better-design, .btn-services-customise, .btn-services-its-free {
+      border-left: 1px solid #C0C0C0;
+      height: 212px;
+      padding-right: 100px;
+      padding-left: 101px;
+  }
+  .btn-services-better-design {
+      margin-left: 139px;
+      margin-right: 27px;
+      padding-left: 102px;
+      position: relative;
+      bottom: 5px;
+  }
+  .btn-services-customise {
+      padding-left: 120px;
+      padding-right: 72px;
+  }
+  .btn-services-its-free{
+      border-right: 1px solid #C0C0C0;
+      margin-right: 139px;
+      padding-right: 100px;
+      padding-left: 95px;
+      position: relative;
+      bottom: 5px;
+  }
+  .div-img-services-better-design {
+      background-image: url(./assets/servicesIcons.png);
+      background-repeat: no-repeat;
+      background-position: 0px 13px;
+      background-size: 305px;
+      background-position: -17px 3px;
+      background-size: 400px;
+      display: inline-block;
+      width: 109px;
+      height: 87px;    
+      width: 150px;
+      height: 87px;  
+      position: relative;
+      right: 20px;
+      top: 4px;
+  }
+  .div-img-services-customise{
+      background-image: url(./assets/servicesIcons.png);
+      background-repeat: no-repeat;
+      background-position: -100px 13px;
+      background-size: 305px;
+      background-position: -134px 1px;
+      background-size: 400px;
+      display: inline-block;
+      width: 109px;
+      height: 87px;  
+      width: 132px;
+      height: 96px;
+      position: relative;
+      right: 22px;
+      top: -5px;
+  }
+  .div-img-services-its-free {
+      background-image: url(./assets/servicesIcons.png);
+      background-repeat: no-repeat;
+      background-position: -200px 13px;
+      background-size: 305px;
+      background-position: -298px -5px;
+      background-size: 400px;
+      position: relative;
+      display: inline-block;
+      width: 109px;
+      width: 109px;
+      top: 10px;
+      height: 87px;
+  }
+  .service-btn {
+      display: block
+      display: block;
+  }
+  .span-services-better-design {
+      margin-left: -25px;
+      color: #000000;
+      font-size: 21pt;
+      position: relative;
+      top: 15px;
+  }
+  .span-services {
+  .span-services-customise {
+      margin-left: -25px;
+      color: #000000;
+      font-size: 21pt;
+      position: relative;
+      top: 11px;
+  }
+  .span-services-its-free {
+      margin-left: 18px;
+      color: #000000;
+      font-size: 14pt;
+      color: #000000;
+      font-size: 21pt;
+      position: relative;
+      top: 15px;
+  }
+  .lorem {
+      font-size: 2.0em;
+      text-transform: uppercase;
+      text-align: left;
+      padding-top: 42px;
+      padding-top: 36px;
+      padding-bottom: 34px;
+      padding-left: 143px;
+  }
+  .lorem-dolar {
+      font-family:'Roboto', sans-serif;
+      font-size: 20pt;
+      background-color: #ec9e03;
+      margin-left: 139px;
+      width: 341px;
+      height: 233px;
+  }
+  .lorem-twitter {
+      font-family:'Roboto', sans-serif;
+      font-size: 20pt;
+      background-color: #ec9e03;
+      margin-left: 35px;
+      width: 329px;
+      height: 233px;
+  }
+  .div-twitter {
+      background-image: url(./assets/twitter.png);
+      background-repeat: no-repeat;
+      background-position: 100px 49px;
+      background-size: 163px;
+      display: inline-block;
+      width: 300px;
+      height: 240px;
+      position: relative;
+      top: 10px;
+      right: 20px;
+  }
+  .down-div {
+      font-family: 'Asap-Regular', sans-serif;
+      font-size: 30pt;
+      text-transform: uppercase;
+      text-align: center;
+      color: rgba(245, 197, 6, 1);
+      padding-top: 41px;
+  }
+  .down-flex {
+      display: flex;
+  }
+  .desctop-div {
+      background-image: url(./assets/Devices.png);
+      background-repeat: no-repeat;
+      background-position: 227px -68px;
+      background-size: 631px;
+      display: inline-block;
+      width: 583px;
+      height: 267px;
+      padding-left: 181px;
+      position: relative;
+      right: 67px;
+      bottom: 67px;
+  }
+  .main-up {
+      background-image: url(./assets/BackgroundMainPart.png);
+      height: 508px;
+  }
+  .add {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 1em;
+      float: right;
+      margin-right: 6px;
+      margin-top: -13px;
+      z-index: 1;
+  }
+  .lorem-dolar div {
+      padding-top: 25px;
+      padding-bottom: 24px;
+      padding-left: 31px;
+      padding-right: 38px;
+  }
+  .lorem-flex {
+      display: flex;
+  }
+  .twit-counter {
+      position: relative;
+      top: -210px;
+      z-index: 3;
+      float: left;
+      margin-left: 284px;
+      margin-top: -25px;
+  }
+  .calendar {
+      float: left;
+      margin-left: 139px;
+      background-color: #ddb101;
+      width: 113px;
+      height: 86px;
+      text-transform: uppercase;
+  }
+  .calendar-data {
+      font-size: 2.5em;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 7px;
+  }
+  .calendar-month {
+      color: #b26529;
+      text-transform: uppercase;
+      font-size: 1em;
+      margin-left: 33px;
+      position: relative;
+      bottom: 7px;
+  }
+  footer {
+      height: 64px;
+      background-color: #4c4c4c;
+      box-shadow: 0px -7px 10px -9px #000000;
+  }
+  ul {
+      width: 350px;
+      margin-top: 87px;
+      margin-left: 13px;
+      font-size: 2.5em;
+      line-height: 0.9;
+  }
+  footer {
+      padding-top: 7px;
+      padding-bottom: 6px;
+      padding-left: 141px;
+  }
+  .its-free {
+      background-color: #f5c506;
+      height: 509px;
+      border-radius: 75px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 116px;
+      height: 66px;
+      padding-top: 51px;
+      left: 138px;
+      font-size: 0.9em;
+      top: 7px;
+      z-index: 2;
+      position: relative;
+  }
+  li {
+      color: #f5c506;
+      font-size: 1em;
+  }
+  li span {
+      color: #a9a9a7;
+      font-size: 0.45em;
+  }
+  .site-name-down {
+      font-family: 'Asap-RegularItalic', sans-serif;
+      text-transform: uppercase;
+      padding-right: 73px;
+      font-size: 1.5em;
+      position: relative;
+      right: 34px;
+      bottom: 8px;
+  }
+  .logo-up-img-down {
+      position: relative;
+      z-index: 2;
+      left: -48px;
+      bottom: -7px;
+      width: 51px;
+      height: 51px;
+  }
+  .logo-img-down {
+      font-family: 'Asap-RegularItalic', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      position: relative;
+      right: -1px;
+      bottom: -7px;
+      width: 51px;
+      height: 51px;
+  } 
