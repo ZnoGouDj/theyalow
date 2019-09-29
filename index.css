@@ -260,7 +260,7 @@
   .btn-services-customise {
       padding-left: 120px;
       padding-right: 72px;
-      margin-left: -32px;
+      margin-left: -42px;
   }
   .btn-services-its-free{
       border-right: 1px solid #C0C0C0;
@@ -313,21 +313,21 @@
       width: 232px;
   }
   .span-services-better-design {
-      margin-left: -25px;
+      margin-left: -105px;
       color: #000000;
       font-size: 21pt;
       position: relative;
       top: 15px;
   }
   .span-services-customise {
-      margin-left: -25px;
+      margin-left: -65px;
       color: #000000;
       font-size: 21pt;
       position: relative;
       top: 11px;
   }
   .span-services-its-free {
-      margin-left: 18px;
+      margin-left: 10px;
       color: #000000;
       font-size: 21pt;
       position: relative;
@@ -622,3 +622,256 @@
   .stop-start:hover {
       border-radius: 15px;
   }
+
+@media screen and (max-device-width: 1024px) {
+	 body {
+		max-width: 1024px;
+	}
+	.logo {
+		background: rgb(87,87,87);
+		background: radial-gradient(circle, rgba(87,87,87,1) 35%, rgba(0,0,0,1) 100%);
+		width: 148px;
+		height: 60px;
+        margin: 0;
+	}
+    .logo-img {
+		position: relative;
+		right: 204px;
+		top: -43px;
+		margin-right: 22px;
+	}
+	.logo-up-img {
+		z-index: 2;
+		left: -305px;
+		bottom: 42px;
+		width: 80px;
+		height: 80px;
+	}
+	.site-name {
+		position: relative;
+		right: 296px;
+		bottom: 27px;
+	}
+	.nav-background-lvl3 {
+		width: 318%;
+		height: 119px;
+		left: -327px;
+		top: -142px;
+		z-index: 3;
+	}
+	.btn-services, .btn-about-us, .btn-contact {
+		height: 120px;
+	}
+	.switch-with-arrow-left, .switch-with-arrow-right, .header-theyalow-title {
+	    display: none;
+	}
+	.nav-btn {
+		font-size: 2.8em;
+	}
+	.div-img-about-us {
+	    width: 70px;
+		height: 72px;
+		background-position: 9px 8px;
+		background-size: 190px;
+	}
+	.div-img-services {
+	    background-position: -63px 6px;
+		background-size: 190px;
+		display: inline-block;
+		width: 66px;
+		height: 72px;
+	}
+	.div-img-contact {
+		width: 66px;
+		height: 72px;
+		background-position: 0px -58px;
+		background-size: 190px;
+	}
+	.services {
+		margin-top: 212px;
+		width: 1303px;
+		height: 374px;
+	}
+	.controls {
+		background-image: url(./assets/upVideo.png);
+		background-size: 1309px;
+		width: 1302px;
+		height: 657px;
+		position: relative;
+		left: 2px;
+		bottom: 77px;
+	}
+	.header-theyalow-section {
+		padding-left: 0;
+	}
+	.btn-services-better-design, .btn-services-customise, .btn-services-its-free {
+		height: 374px;
+	}
+	.main-up {
+		height: 961px;
+		width: 1303px;
+		background-image: none;
+	}
+	.lorem {
+		display: none;
+	}
+	.slider {
+		display: none;
+	}
+	.lorem-dolar {
+		font-family: 'Roboto', sans-serif;
+		font-size: 20pt;
+		background-color: #ec9e03;
+		margin-left: 0; 
+		width: 619px;
+		height: 440px;
+
+	}
+	.lorem-flex {
+		display: block;
+		padding: 15px;
+	}
+	.video-theyalow-main {
+	    width: 619px;
+		display: block;
+		height: 440px;
+		z-index: 4;
+		position: relative;
+		top: -439px;
+		left: 630px;
+	}
+    .lorem-twitter {
+		font-family: 'Roboto', sans-serif;
+		font-size: 20pt;
+		background-color: #f5c507;
+		margin-left: 35px;
+		width: 1300px;
+		height: 479px;
+		position: relative;
+		bottom: 412px;
+		left: -48px;
+	}
+	.div-twitter {
+		background-size: 354px;
+		display: inline-block;
+		width: 600px;
+		height: 560px;
+		position: relative;
+		top: 78px;
+		right: 275px;
+	}
+	.calendar {
+		display: none;
+	}
+	.devace-gray {
+		height: 945px;
+		width: 1303px;
+	}
+	.down-title {
+		font-size: 4em;
+		padding-top: 82px;
+	}
+	.its-free {
+		border-radius: 96px;
+		text-align: center;
+		width: 233px;
+		height: 130px;
+		padding-top: 88px;
+		left: 56px;
+		font-size: 0.9em;
+		top: 77px;
+		z-index: 3;
+		position: relative;
+		font-size: 1.5em;
+	}
+	.desctop-div {
+		background-position: 243px -51px;
+		background-size: 1325px;
+		display: inline-block;
+		width: 1196px;
+		height: 624px;
+		padding-left: 162px;
+		position: relative;
+		right: 141px;
+		bottom: 166px;
+	}
+	.playpause-main {
+		font-size: 3em;
+		position: relative;
+		top: 170px;
+		left: 268px;
+		z-index: 3;
+		padding-top: 24px;
+		width: 117px;
+		height: 97px;
+		text-align: center;
+		border-radius: 107px;
+	}
+	.site-name-down {
+		font-size: 2em;
+		position: relative;
+		right: 34px;
+	}
+	.video-theyalow-main {
+		background-size: 619px;
+	}
+	.btn-services-better-design, .btn-services-customise, .btn-services-its-free {
+		border-left: none;
+		border-right: none;
+	}
+	.progress {	
+		position: relative;
+		top: 202px
+	}
+	.main-video-progress {
+		margin-top: 191px;
+		margin-left: 265px;
+		width: 846px;
+		height: 20px;
+		border-radius: 13px;
+	}
+	.main-video-progress-bar {
+		width: 366px;
+		height: 20px;
+		border-radius: 15px 0px 0px 15px;
+	}
+	.stop-start {
+		background-position: 9px -4px;
+		background-size: 60px;
+		position: relative;
+		bottom: -426px;
+		margin-left: 162px;
+		width: 50px;
+		height: 50px;
+		text-align: center;
+	}
+	.sound {
+		background-position: -54px -19px;
+		background-size: 100px;
+		position: relative;
+		bottom: -164px;
+		right: 2px;
+		margin-left: 1144px;
+		width: 44px;
+		height: 116px;
+	}
+	.playpause {
+		font-size: 2em;
+		position: relative;
+		top: 259px;
+		left: 587px;
+		z-index: 3;
+		padding-top: 44px;
+		width: 142px;
+		height: 91px;
+		text-align: center;
+		border-radius: 101px;
+	}
+	footer {
+		width: 1161px;
+		padding-bottom: 0;
+	}
+	ul {
+		display: none;
+	}
+}
