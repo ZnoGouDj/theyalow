@@ -1,140 +1,177 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    max-width: 1300px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    color: #ffffff;
-  }
-  .header-theyalow {
-      width: 1300px;
-      height: 566px;
-      background-image: url(assets/headerBackground.png);
-  }
-  
-  .video-theyalow {
-  
-      width: 549px;
-      height: 327px;
-  }
-  .header-theyalow-title  {
-      text-transform: uppercase;
-      text-align: center;
-      margin-top: 90px;
-      margin-left: 51px;
-      margin-bottom: 116px;
-      color: rgba(245, 197, 6, 255);
-  }
-  h1 .header-theyalow-title  {
-       color: #ffffff;
-  }
-  .header-theyalow-div {
-      display: -webkit-flex; 
-      display: flex; 
-      padding-top: 78px;
-      padding-left: 150px;
-      margin-bottom: 71px;
-  }
-  .logo {
-      display: -webkit-flex; 
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 60px;
-      padding-left: 232px;
-  }
-  .logo-img {
-      width: 50px;
-      height: 50px;
-      }
-  .logo-up-img {
-      position: relative;
-      z-index: 2;
-      left: -49px;
-      width: 50px;
-      height: 50px;
-  }
-  .site-name {
-      text-transform: uppercase;
-      padding-right: 185px;
-      font-size: 2em;
-  }
-  .navbar {
-      width: 453px;
-      height: 41px;
-  }
-  .nav-background-lvl1 {
-      background-color: rgba(245, 197, 6, 0.3);
-      position: relative;
-      width: 100%;
-      height: 41px;
-  }
-  .nav-background-lvl2 {
-      background-color: rgba(245, 197, 6, 0.3);
-      position: relative;
-      width: 100%;
-      height: 41px;
-      left: 6px;
-      top: -37px;
-      z-index: 2;
-  }
-  .nav-background-lvl3 {
-      background-color: rgba(245, 197, 6, 1);
-      position: relative;
-      width: 100%;
-      height: 41px;
-      left: 11px;
-      top: -74px;
-      z-index: 3;
-  
-  }
-  button {
-      text-transform: uppercase;
-      background-color: Transparent;
-      background-repeat:no-repeat;
-      color: rgba(155, 125, 8, 255);
-      border: none;
-      cursor:pointer;
-      overflow: hidden;
-  }
-  button span {
-      text-align: center;
-      margin-top: auto;
-      margin-bottom: auto;
-  }
-  .div-img-about-us {
-      background-image: url(./assets/icons.png);
-      background-repeat: no-repeat;
-      display: inline-block;
-      width: 33px;
-      height: 36px;
-      background-position: 1px 3px;
-      background-size: 60px;
-  }
-  .div-img-services {
-      background-image: url(./assets/icons.png);
-      background-repeat: no-repeat;
-      display: inline-block;
-      width: 33px;
-      height:36px;
-      background-position: -29px 3px;
-      background-size: 60px;
-  }
-  .div-img-contact {
-      background-image: url(./assets/icons.png);
-      background-repeat: no-repeat;
-      display: inline-block;
-      width: 33px;
-      height: 36px;
-      background-position: 0px -29px;
-      background-size: 60px;
-  }
-  .btn-services, .btn-about-us  {
-      border-right: 1px solid rgba(155, 125, 8, 255);
-  }
-  .btn-about-us {
-      padding-left: 87px;
-  }
-  .nav-btn {
-      display: flex;
-  } 
+    @font-face {
+      font-family: Asap-Regular; /* Гарнитура шрифта */
+      src: url(assets/Asap-Regular.ttf); /* Путь к файлу со шрифтом */
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      max-width: 1300px;
+      margin-top: 0;
+    @@ -11,17 +15,18 @@
+        height: 566px;
+        background-image: url(assets/headerBackground.png);
+    }
+    
+    .video-theyalow {
+    
+        width: 549px;
+        height: 327px;
+    }
+    .header-theyalow-title  {
+        font-family: 'Asap-Regular', sans-serif;
+        font-size: 30pt;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 90px;
+        margin-left: 51px;
+        margin-right: auto;
+        margin-bottom: 116px;
+        color: rgba(245, 197, 6, 255);
+    }
+    @@ -92,7 +97,7 @@ button {
+        text-transform: uppercase;
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        color: rgba(155, 125, 8, 255);
+        color: rgba(155, 125, 8, 1);
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+    @@ -109,7 +114,7 @@ button span {
+        width: 33px;
+        height: 36px;
+        background-position: 1px 3px;
+        background-size: 60px;
+        background-size: 95px;
+    }
+    .div-img-services {
+        background-image: url(./assets/icons.png);
+    @@ -118,7 +123,7 @@ button span {
+        width: 33px;
+        height:36px;
+        background-position: -29px 3px;
+        background-size: 60px;
+        background-size: 95px;
+    }
+    .div-img-contact {
+        background-image: url(./assets/icons.png);
+    @@ -127,14 +132,117 @@ button span {
+        width: 33px;
+        height: 36px;
+        background-position: 0px -29px;
+        background-size: 60px;
+        background-size: 95px;
+    }
+    .btn-services, .btn-about-us  {
+        border-right: 1px solid rgba(155, 125, 8, 255);
+        border-right: 1px solid rgba(155, 125, 8, 1);
+        height: 41px;
+    }
+    .btn-about-us {
+        padding-left: 87px;
+    }
+    .nav-btn {
+        display: flex;
+    }
+    
+    .switch-with-arrow-left {
+        background-color: #f5c506;
+        background-image: url(./assets/icons.png);
+        display: inline-block;
+        width: 32px;
+        height: 57px;
+        background-position: -58px 56px;
+        background-size: 90px;
+        margin-top: 135px;
+        margin-bottom: auto;
+        margin-right: 100px;
+        position: relative;
+        left: -150px;
+    }
+    
+    .switch-with-arrow-right {
+        background-color: #f5c506;
+        background-image: url(./assets/icons.png);
+        display: inline-block;
+        width: 32px;
+        height: 57px;
+        background-position: -58px 56px;
+        background-size: 90px;
+        margin-top: 135px;
+        margin-bottom: auto;
+        position: relative;
+        transform: rotate(185.36rad);
+    }
+    .services {
+        position: relative;
+        width: 100%;
+        height: 212px;
+    }
+    .div-img-services {
+        background-image: url(./assets/icons.png);
+        background-repeat: no-repeat;
+        background-position: 1px 3px;
+        background-size: 95px;
+        display: inline-block;
+        width: 33px;
+        height: 36px;
+    
+    }
+    .btn-services-better-design, .btn-services-customise, .btn-services-its-free {
+        border-left: 1px solid #C0C0C0;
+        height: 212px;
+        padding-right: 100px;
+        padding-left: 101px;
+    }
+    .btn-services-better-design {
+        margin-left: 139px;
+    }
+    .btn-services-its-free{
+        border-right: 1px solid #C0C0C0;
+        margin-right: 139px;
+    }
+    .div-img-services-better-design {
+        background-image: url(./assets/servicesIcons.png);
+        background-repeat: no-repeat;
+        background-position: 0px 13px;
+        background-size: 305px;
+        display: inline-block;
+        width: 109px;
+        height: 87px;    
+    }
+    .div-img-services-customise{
+        background-image: url(./assets/servicesIcons.png);
+        background-repeat: no-repeat;
+        background-position: -100px 13px;
+        background-size: 305px;
+        display: inline-block;
+        width: 109px;
+        height: 87px;  
+    }
+    .div-img-services-its-free {
+        background-image: url(./assets/servicesIcons.png);
+        background-repeat: no-repeat;
+        background-position: -200px 13px;
+        background-size: 305px;
+        display: inline-block;
+        width: 109px;
+        height: 87px;
+    }
+    .service-btn {
+        display: block
+    }
+    .span-services {
+        margin-left: 18px;
+        color: #000000;
+        font-size: 14pt;
+    }
+    .lorem {
+        text-transform: uppercase;
+        text-align: left;
+        padding-top: 42px;
+        padding-left: 143px;
+    }
+    .main-up {
+        background-color: #f5c506;
+        height: 509px;
+    } 
