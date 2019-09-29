@@ -1,2 +1,140 @@
 body {
-} 
+    font-family: 'Roboto', sans-serif;
+    max-width: 1300px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+  }
+  .header-theyalow {
+      width: 1300px;
+      height: 566px;
+      background-image: url(assets/headerBackground.png);
+  }
+  
+  .video-theyalow {
+  
+      width: 549px;
+      height: 327px;
+  }
+  .header-theyalow-title  {
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 90px;
+      margin-left: 51px;
+      margin-bottom: 116px;
+      color: rgba(245, 197, 6, 255);
+  }
+  h1 .header-theyalow-title  {
+       color: #ffffff;
+  }
+  .header-theyalow-div {
+      display: -webkit-flex; 
+      display: flex; 
+      padding-top: 78px;
+      padding-left: 150px;
+      margin-bottom: 71px;
+  }
+  .logo {
+      display: -webkit-flex; 
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 60px;
+      padding-left: 232px;
+  }
+  .logo-img {
+      width: 50px;
+      height: 50px;
+      }
+  .logo-up-img {
+      position: relative;
+      z-index: 2;
+      left: -49px;
+      width: 50px;
+      height: 50px;
+  }
+  .site-name {
+      text-transform: uppercase;
+      padding-right: 185px;
+      font-size: 2em;
+  }
+  .navbar {
+      width: 453px;
+      height: 41px;
+  }
+  .nav-background-lvl1 {
+      background-color: rgba(245, 197, 6, 0.3);
+      position: relative;
+      width: 100%;
+      height: 41px;
+  }
+  .nav-background-lvl2 {
+      background-color: rgba(245, 197, 6, 0.3);
+      position: relative;
+      width: 100%;
+      height: 41px;
+      left: 6px;
+      top: -37px;
+      z-index: 2;
+  }
+  .nav-background-lvl3 {
+      background-color: rgba(245, 197, 6, 1);
+      position: relative;
+      width: 100%;
+      height: 41px;
+      left: 11px;
+      top: -74px;
+      z-index: 3;
+  
+  }
+  button {
+      text-transform: uppercase;
+      background-color: Transparent;
+      background-repeat:no-repeat;
+      color: rgba(155, 125, 8, 255);
+      border: none;
+      cursor:pointer;
+      overflow: hidden;
+  }
+  button span {
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+  .div-img-about-us {
+      background-image: url(./assets/icons.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 33px;
+      height: 36px;
+      background-position: 1px 3px;
+      background-size: 60px;
+  }
+  .div-img-services {
+      background-image: url(./assets/icons.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 33px;
+      height:36px;
+      background-position: -29px 3px;
+      background-size: 60px;
+  }
+  .div-img-contact {
+      background-image: url(./assets/icons.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 33px;
+      height: 36px;
+      background-position: 0px -29px;
+      background-size: 60px;
+  }
+  .btn-services, .btn-about-us  {
+      border-right: 1px solid rgba(155, 125, 8, 255);
+  }
+  .btn-about-us {
+      padding-left: 87px;
+  }
+  .nav-btn {
+      display: flex;
+  } 
