@@ -1,93 +1,133 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <link href="./index.css" rel="stylesheet">
-    <title>theyalow</title>
+    <title> </title>
 </head>
 
 <body>
-        <header class="header-theyalow">
-            <div class="logo">
-                <img  class="logo-img" src="./assets/logo.png"><img  class="logo-up-img" src="./assets/upLogo.png"><span class="site-name">TheYalow</span>
-                <img  class="logo-img" src="./assets/logo.png"><img  class="logo-up-img" src="./assets/upLogo.png">
-                <span class="site-name">TheYalow</span>
-                <nav class="navbar">
-                    <div class="nav-background-lvl1"></div>
-                    <div class="nav-background-lvl2"></div>
-  @@ -55,30 +56,71 @@ <h1 class='header-theyalow-title'>The cool <br>
-                    <button class="btn-services-better-design">
-                        <div class="service-btn ">
-                            <div class="div-img-services-better-design"></div><br>
-                            <span class="span-services">better design</span>
-                            <span class="span-services-better-design">better design</span>
+    <header class="header-theyalow">
+        <div class="logo">
+            <img class="logo-img" src="./assets/logo.png"><img class="logo-up-img" src="./assets/upLogo.png">
+            <span class="site-name">TheYalow</span>
+            <nav class="navbar">
+                <div class="nav-background-lvl1"></div>
+                <div class="nav-background-lvl2"></div>
+                <div class="nav-background-lvl3">
+                    <button class="btn-about-us">
+                        <div class="nav-btn">
+                            <div class="div-img-about-us"></div>
+                            <span>About Us</span>
                         </div>
                     </button>
-                    <button class="btn-services-customise">
-                        <div class="service-btn ">
-                            <div class="div-img-services-customise"></div><br>
-                            <span class="span-services">customise</span>
-                            <span class="span-services-customise">customise</span>
+                    <button class="btn-services">
+                        <div class="nav-btn">
+                            <div class="div-img-services"></div>
+                            <span>Services</span>
                         </div>
                     </button>
-                    <button class="btn-services-its-free">
-                        <div class="service-btn ">
-                            <div class="div-img-services-its-free"></div><br>
-                            <span class="span-services">Its Free</span>
-                            <span class="span-services-its-free">Its Free</span>
+                    <button class="btn-contact">
+                        <div class="nav-btn">
+                            <div class="div-img-contact"></div>
+                            <span>Contact</span>
                         </div>
                     </button>
                 </div>
-                <div class="main-up">
-                    <div class="lorem">Lorem ipsum dolor sit amet</div>
-                    <scroll>
+            </nav>
+        </div>
+        <section class="header-theyalow-section">
+            <div class="switch-with-arrow-left"></div>
+            <div id="video-controls" class="controls" data-state="hidden">
+                <div class="playpause">▶</div>
+                <div class="stop-start"></div>
+                <div class="progress">
+                    <div id="progress" class="main-video-progress" value="0" min="0">
+                        <div id="progress-bar" class="main-video-progress-bar"></div>
+                    </div>
+                </div>
+                <div class="sound"></div>
+            </div>
+            <h1 class='header-theyalow-title'>The cool <br>
+                <span class='header-theyalow-title'>The minimal </span>
+            </h1>
+            <div class="switch-with-arrow-right"></div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <header class="services">
+                <button class="btn-services-better-design">
+                    <div class="service-btn-width">
+                        <div class="div-img-services-better-design"></div><br>
+                        <span class="span-services-better-design">better design</span>
+                    </div>
+                </button>
+                <button class="btn-services-customise">
+                    <div class="service-btn ">
+                        <div class="div-img-services-customise"></div><br>
+                        <span class="span-services-customise">customise</span>
+                    </div>
+                </button>
+                <button class="btn-services-its-free">
+                    <div class="service-btn ">
+                        <div class="div-img-services-its-free"></div><br>
+                        <span class="span-services-its-free">Its Free</span>
+                    </div>
+                </button>
+            </header>
+            <main class="main-up">
+                <scroll>
                     <div class="lorem">Lorem ipsum dolor sit amet</div>
                     <div class="lorem-flex">
-                        <div class="lorem-dolar">
-                            <div> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</div>
+                        <article class="lorem-dolar">
+                            <div> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut</div>
                             <button class="add">+</button>
+                        </article>
+                        <div class="video-theyalow-main">
+                            <div class="playpause-main">▶</div>
                         </div>
-                        <video class="video-theyalow-main" controls poster=""></video>
-                         <div class="lorem-twitter">
+                        <article class="lorem-twitter">
                             <div class="div-twitter"></div>
-                            <span class="twit-counter">22</span> 
-                            <button class="add">+</button>
-                        </div><br>
+                            <span class="twit-counter">22</span>
+                            <button class="add-twit">+</button>
+                        </article>
                     </div>
                     <div class="calendar">
-                            <div>
-                               <div class='calendar-data'>25</div>
-                               <span class='calendar-month'>April</span>
-                            </div>
-                        </div>
-  
-                    </scroll>
-                </div>
-            </section>
-            <section>
-                <div class="devace-gray">
-                    <div class="down-div">Lorem ipsum dolor sit amet</div>
-                    <div class="down-flex">
                         <div>
-                            <div class="its-free">Its 100% Free</div>
-                            <div class="desctop-div"></div>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><span>Sed ut perspiciatis unde omnis</span></li>
-                                <li><span>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing</span></li>
-                                <li><span>Sed ut perspiciatis unde omnis</span></li>
-                                <li><span>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing</span></li>
-                            </ul>
+                            <div class='calendar-data'>25</div>
+                            <span class='calendar-month'>April</span>
                         </div>
                     </div>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </scroll>
+            </main>
+        </section>
+        <section class="devace-gray">
+            <div class="down-title">Lorem ipsum dolor sit amet</div>
+            <div class="down-flex">
+                <div>
+                    <div class="its-free">Its 100% Free</div>
+                    <div class="desctop-div"></div>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <img  class="logo-img-down" src="./assets/logo.png"><img  class="logo-up-img-down" src="./assets/upLogo.png">
-            <span class="site-name-down">TheYalow</span>
-        </footer>
-    </body>
-  </html>
+                <div>
+                    <ul>
+                        <li><span>Sed ut perspiciatis unde omnis</span></li>
+                        <li><span>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing</span></li>
+                        <li><span>Sed ut perspiciatis unde omnis</span></li>
+                        <li><span>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img class="logo-img-down" src="./assets/logo.png"><img class="logo-up-img-down" src="./assets/upLogo.png">
+        <span class="site-name-down">TheYalow</span>
+    </footer>
+</body>
+
+</html>
